@@ -20,7 +20,7 @@ class Animal:
                 f"Hidden: {self.hidden}}}")
 
     def check_if_alive(self) -> None:
-        if self.health <= 0:
+        if self.health <= 0 and self in Animal.alive:
             Animal.alive.remove(self)
 
 
